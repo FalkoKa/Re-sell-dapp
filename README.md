@@ -2,7 +2,9 @@
 
 Final project Encode Solidity Bootcamp Q4
 
-This project is a collaborative effort as part of the Encode Solidity Bootcamp Q4. Our group had approximately one week to develop this full-stack dApp.
+This project is a collaborative effort as part of the <a href="https://www.encode.club/solidity-bootcamps">Encode Solidity Bootcamp Q4</a>. Our group had approximately one week to develop this full-stack dApp.
+
+<a href="https://resell-dapp-frontend.vercel.app/">Check out our project!</a>
 
 We constructed a Solidity NFT contract based on the ERC-721 NON-FUNGIBLE TOKEN STANDARD. The frontend was implemented using Typescript, Scaffold-ETH dApp template, and Next.js. The REST API was developed with a Nest.js backend and a MongoDB database, hosted on Atlas. You can find both frontend and backend code in their respective folders within this GitHub repository.
 
