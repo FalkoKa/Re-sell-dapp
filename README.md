@@ -1,4 +1,4 @@
-# Marketplace resale dApp
+# NFT Ticket Resell dApp
 
 Final project Encode Solidity Bootcamp Q4
 
