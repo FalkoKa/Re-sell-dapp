@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Event } from "~~/pages";
+import { Event } from "~~/interfaces/interfaces";
 
 type Props = {
   event: Event;
@@ -31,7 +31,7 @@ export const EventLink = ({ event }: Props) => {
           <span>{event.name}</span>
           <span>{event.artistName}</span>
           <span>
-            {new Date(event.eventDate * 1000).toLocaleDateString("en-EN", {
+            {new Date(Number(event.eventDate) * 1000).toLocaleDateString("en-EN", {
               weekday: "short",
               year: "numeric",
               month: "long",

@@ -6,8 +6,6 @@ import { Buy } from "../../components/Buy";
 import { ResellInput } from "../../components/ResellInput";
 import { Ticket } from "../../interfaces/interfaces";
 import { backendUrl } from "../_app";
-import dummyDataJson from "../dummyEvents.json";
-import dummyNFTJson from "../dummyNFT.json";
 import { useAccount } from "wagmi";
 import { convertToEvent } from "~~/utils/convertToEvents";
 import { Event } from "../../interfaces/interfaces";
@@ -33,7 +31,6 @@ const Event = () => {
     setIsLoadingEvents(false);
   };
 
-  // todo, fetch from backend ?
   const myTickets: Ticket[] | undefined = eventData && eventData?.ticketList.filter((ticket) => ticket.owner_address === address)
     const isAttending = myTickets ? myTickets.length > 0 : false
 
@@ -66,7 +63,7 @@ const canBuy = eventData && ((eventData?.totalTickets - eventData?.ticketsBooked
             })} </span>
                   <span>Ticket Price :</span><span>{eventData.price ? `${eventData.price} ETH` : "N/A"} </span>
                   <span>Ticket remaining :</span><span>{eventData.totalTickets - eventData.ticketsBooked} </span>
-                  <span>Event contract address :</span><span>{eventData.id}</span> {/* TO CHECK : id is contract address */}
+                  <span>Event contract address :</span><span>{eventData.id}</span> 
                 </div>
 
               </div>
